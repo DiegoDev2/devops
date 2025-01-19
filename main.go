@@ -22,7 +22,7 @@ func main() {
 	http.HandleFunc("/health", handleHealth)
 
 	port := "8080"
-	println("Server running on port", port)
+	println("Server running on port: ", port)
 	http.ListenAndServe(":"+port, nil)
 }
 
